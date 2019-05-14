@@ -3,14 +3,10 @@
 # ed macaulay
 # edward.macaulay@gmail.com
 #############################################################################################
-It's quick and easy to make plots in python, but
-it takes more work to get a plot ready for publication.
-This script includes most of the 'boiler plate' code
-that is needed.
-
-
-
-
+#It's quick and easy to make plots in python, but
+#it takes more work to get a plot ready for publication.
+#This script includes most of the 'boiler plate' code
+#that is needed.
 #############################################################################################
 # import libraries
 #############################################################################################
@@ -25,7 +21,7 @@ import matplotlib.pyplot as plt # for plotting
 #############################################################################################
 
 def arbitrary_function(x):
-    y =  20.0 + ( np.exp(x) - np.log10(x) )
+    y = 10.0 + x**(-1.0) + x**(2.0)
     return y
 
 #############################################################################################
@@ -35,7 +31,7 @@ def arbitrary_function(x):
 #############################################################################################
 
 x_min = 0.01
-x_max = 10.0
+x_max = 100.0
 N_points = 100
 delta_scale = 5.0
 
